@@ -1,0 +1,13 @@
+root: true
+extends:
+  - google
+  - plugin:@typescript-eslint/recommended
+  - plugin:react/recommended
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 13
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+rules:
+  # Additional rules
