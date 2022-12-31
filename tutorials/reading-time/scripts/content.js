@@ -1,4 +1,3 @@
-console.log("hello hello");
 const article = document.querySelector("article");
 
 if (article) {
