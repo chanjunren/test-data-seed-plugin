@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Test Data Seed",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "Browser extension to generate test data to be used for automated testing",
   "background": {
     "service_worker": "background.ts",
     "type": "module"
