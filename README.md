@@ -1,6 +1,8 @@
 # Test-Data-Seed-Plugin
 
-<img src="banner.png" alt="image alt text" width="100%">
+<p align="center">
+  <img src="banner.png" alt="image alt text">
+</p>
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/chanjunren/test-data-seed-plugin)
 ![Commit Activity](https://img.shields.io/github/last-commit/chanjunren/test-data-seed-plugin)
@@ -17,7 +19,6 @@ yarn install
 
 ## Motivation
 Creating CSV files while testing 
-
 
 ## Idea
 - Browser plugin that intercept requests
@@ -41,3 +42,6 @@ Creating CSV files while testing
 - https://developer.chrome.com/docs/extensions/mv3/getstarted/
 - https://prettier.io/docs/en/index.html
 - https://eslint.org/docs/latest/user-guide/getting-started
+
+## Contributions 
+- Japan icon created by Freepik - Flaticon

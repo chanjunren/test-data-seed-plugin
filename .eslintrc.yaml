@@ -1,13 +1,11 @@
 root: true
 extends:
   - google
-  - plugin:@typescript-eslint/recommended
+  - eslint:recommended
   - plugin:react/recommended
-parser: '@typescript-eslint/parser'
+  - next/core-web-vitals
 parserOptions:
   ecmaVersion: 13
   sourceType: module
   ecmaFeatures:
     jsx: true
-rules:
-  # Additional rules
