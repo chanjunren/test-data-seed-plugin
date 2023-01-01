@@ -1,6 +1,5 @@
 root: true
 extends:
-  - google
   - eslint:recommended
   - plugin:react/recommended
   - next/core-web-vitals
