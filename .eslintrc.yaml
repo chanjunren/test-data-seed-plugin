@@ -4,7 +4,7 @@ extends:
   - plugin:react/recommended
   - next/core-web-vitals
 parserOptions:
-  ecmaVersion: 13
+  ecmaVersion: 6
   sourceType: module
   ecmaFeatures:
     jsx: true
