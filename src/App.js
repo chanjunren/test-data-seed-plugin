@@ -5,11 +5,13 @@ import TableHeader from "./components/TableHeader";
 import { GET_REQ } from "./utils/constants";
 
 export function App() {
- return (
-    <div>
-        <HeroSection/>
+  return (
+    <div className={"min-w-[28rem]"}>
+      <HeroSection />
+      <div className={"grid justify-items-center gap-2"}>
         <TableHeader requestType={GET_REQ} url={"/v3/c2c/accounts/current"} />
         <TestDataTable />
+      </div>
     </div>
- )
+  );
 }
