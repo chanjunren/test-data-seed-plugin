@@ -1,26 +1,24 @@
 {
-  "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "eslint": "^8.31.0",
-    "eslint-config-next": "13.1.1",
-    "postcss": "^8.4.20",
-    "prettier": "^2.8.1",
-    "tailwindcss": "^3.2.4"
-  },
+  "name": "test-data-seed-plugin",
+  "version": "1.0.0",
+  "source": "src/index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build && next export && mv ./out/_next ./out/next && cd ./out && grep -rl '/_next' * | xargs sed -i 's|/_next|/next|g'\n",
-    "build:mac": "next build && next export && mv ./out/_next ./out/next && cd ./out && grep -rli '_next' * | xargs -I@ sed -i '' 's|/_next|/next|g' @;\n",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "parcel watch src/manifest.json --host localhost --config @parcel/config-webextension",
+    "build": "parcel build src/manifest.json --config @parcel/config-webextension"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.13",
-    "@next/font": "13.1.1",
     "antd": "^5.1.2",
-    "next": "^13.1.1",
-    "next-compose-plugins": "^2.2.1",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@parcel/config-webextension": "^2.8.2",
+    "eslint": "^8.31.0",
+    "parcel": "^2.8.2",
+    "postcss": "^8.4.20",
+    "prettier-eslint": "^15.0.1",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.2.4"
   }
 }
