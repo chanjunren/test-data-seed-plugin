@@ -1,7 +1,12 @@
 import Head from "next/head";
 import HeroSection from "../components/HeroSection";
+import TestDataTable from "../components/TestDataTable";
+import usePlugin from "../utils/usePlugin";
+import TableHeader from "../components/TableHeader";
+import { GET_REQ } from "../utils/constants";
 
 export default function Home() {
+  usePlugin();
   return (
     <>
       <Head>
@@ -12,6 +17,10 @@ export default function Home() {
       </Head>
       <main>
         <HeroSection />
+        <div className={"grid justify-items-center gap-2"}>
+          <TableHeader requestType={GET_REQ} url={"/v3/c2c/accounts/current"} />
+          <TestDataTable />
+        </div>
       </main>
     </>
   );
