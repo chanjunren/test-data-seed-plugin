@@ -1,18 +1,21 @@
 {
   "devDependencies": {
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.31.0",
     "eslint-config-next": "13.1.1",
-    "prettier": "^2.8.1"
+    "postcss": "^8.4.20",
+    "prettier": "^2.8.1",
+    "tailwindcss": "^3.2.4"
   },
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export && mv ./out/_next ./out/next && cd ./out && grep -rl '/_next' * | xargs sed -i 's|/_next|/next|g'\n",
-    "build:mac": "mv ./out/_next ./out/next && cd ./out && grep -rli '_next' * | xargs -I@ sed -i '' 's|/_next|/next|g' @;\n",
+    "build:mac": "next build && next export && mv ./out/_next ./out/next && cd ./out && grep -rli '_next' * | xargs -I@ sed -i '' 's|/_next|/next|g' @;\n",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@ant-design/pro-components": "^2.3.50",
+    "@heroicons/react": "^2.0.13",
     "@next/font": "13.1.1",
     "antd": "^5.1.2",
     "next": "^13.1.1",
