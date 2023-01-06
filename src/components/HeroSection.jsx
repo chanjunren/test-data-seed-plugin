@@ -1,9 +1,10 @@
 import React from "react";
-import logo from "../static/nekomata-128.png";
 import {
   Cog6ToothIcon,
   InformationCircleIcon,
 } from "@heroicons/react/24/outline";
+import heroAnimation from "../static/hero-animation.json";
+import Lottie from "lottie-react";
 
 export default function HeroSection() {
   return (
@@ -12,7 +13,7 @@ export default function HeroSection() {
         "flex flex-col items-center gap-2 p-5 h-[30rem] snap-center justify-center"
       }
     >
-      <img src={logo} alt={"plugin-logo"} className={"w-40 col-span-2"} />
+      <Lottie animationData={heroAnimation} loop={true} />
       <p className={"text-center text-xl"}>Test Data Seed Plugin</p>
       <div className={"flex gap-4"}>
         <Cog6ToothIcon

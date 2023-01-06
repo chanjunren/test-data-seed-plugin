@@ -3,7 +3,7 @@ import { MinusCircleIcon } from "@heroicons/react/24/outline";
 
 export default function TableEntry({ description }) {
   return (
-    <div className={"flex shadow-md p-4 hover:scale-[1.02] duration-500"}>
+    <div className={"flex shadow-sm p-4 hover:scale-[1.02] duration-500"}>
       <p className={"basis-5/6 self-center"}>{description}</p>
       <MinusCircleIcon
         className={
