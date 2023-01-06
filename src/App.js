@@ -1,17 +1,20 @@
 import React from "react";
 import HeroSection from "./components/HeroSection";
-import TestDataTable from "./components/TestDataTable";
-import TableHeader from "./components/TableHeader";
-import { GET_REQ } from "./utils/constants";
+import Dashboard from "./components/Dashboard";
+import usePlugin from "./utils/usePlugin";
 
 export function App() {
+  const { pluginState } = usePlugin({
+    targetUrl: "https://www.mangatx.com",
+  });
   return (
-    <div className={"min-w-[28rem]"}>
+    <div
+      className={
+        "w-[30rem] max-h-[30rem] overflow-y-scroll snap-y snap-mandatory"
+      }
+    >
       <HeroSection />
-      <div className={"grid justify-items-center gap-2"}>
-        <TableHeader requestType={GET_REQ} url={"/v3/c2c/accounts/current"} />
-        <TestDataTable />
-      </div>
+      <Dashboard pluginState={pluginState} />
     </div>
   );
 }

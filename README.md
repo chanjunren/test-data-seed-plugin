@@ -33,13 +33,16 @@ Creating CSV files while testing
 - Display recorded test cases 
 - Clear recorded test cases
 - Export recorded test cases 
-- Add additional headers (or at least add to some metadata) 
+- Add additional headers 
   - For Android / IOS build version
 
+| Unfortunately, unable to get ResponseBody because this information can only be received
+| through the `devtools` API, which is not available for non - devtool plugins
 ## Other features
 
 ## References
 - https://developer.chrome.com/docs/extensions/mv3/getstarted/
+- https://parceljs.org/recipes/web-extension/
 - https://prettier.io/docs/en/index.html
 - https://eslint.org/docs/latest/user-guide/getting-started
 

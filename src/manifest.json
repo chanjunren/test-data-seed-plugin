@@ -3,6 +3,16 @@
   "name": "Test Data Seed",
   "version": "1.0.0",
   "description": "Browser extension to generate test data to be used for automated testing",
+  "background": {
+    "service_worker": "utils/serviceWorker.js",
+    "type":"module"
+  },
+  "permissions": [
+    "webRequest"
+  ],
+  "host_permissions":[
+    "*://*.okx.com/"
+  ],
   "icons": {
     "16": "./static/nekomata-16.png",
     "32": "./static/nekomata-32.png",

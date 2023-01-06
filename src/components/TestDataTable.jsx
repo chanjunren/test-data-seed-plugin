@@ -11,7 +11,7 @@ export default function TestDataTable() {
     },
   ];
   return (
-    <div className={"grid w-96 gap-3 m-auto"}>
+    <div className={"grid gap-3 w-full"}>
       {mockData.map((test, index) => (
         <TableEntry key={`table-entry-${index}`} {...test} />
       ))}

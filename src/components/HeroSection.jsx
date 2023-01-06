@@ -7,7 +7,11 @@ import {
 
 export default function HeroSection() {
   return (
-    <div className={"flex flex-col items-center gap-2 p-5"}>
+    <div
+      className={
+        "flex flex-col items-center gap-2 p-5 h-[30rem] snap-center justify-center"
+      }
+    >
       <img src={logo} alt={"plugin-logo"} className={"w-40 col-span-2"} />
       <p className={"text-center text-xl"}>Test Data Seed Plugin</p>
       <div className={"flex gap-4"}>

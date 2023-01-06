@@ -1,2 +1,2 @@
-export const GET_REQ = "get";
-export const POST_REQ = "post";
+export const GET_REQ = "GET";
+export const POST_REQ = "POST";
