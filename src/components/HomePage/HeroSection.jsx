@@ -3,7 +3,7 @@ import {
   Cog6ToothIcon,
   InformationCircleIcon,
 } from "@heroicons/react/24/outline";
-import heroAnimation from "../static/hero-animation.json";
+import heroAnimation from "../../static/hero-animation.json";
 import Lottie from "lottie-react";
 
 export default function HeroSection() {
