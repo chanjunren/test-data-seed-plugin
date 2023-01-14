@@ -1,4 +1,4 @@
-import { GET_REQ, POST_REQ } from "./constants";
+import { GET_REQ, POST_REQ } from "../utils/constants";
 
 export function addChromeWebRequestListener(url) {
   console.log("Adding listener...");

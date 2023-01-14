@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Browser extension to generate test data to be used for automated testing",
   "background": {
-    "service_worker": "utils/serviceWorker.js",
+    "service_worker": "serviceWorker/loader.js",
     "type":"module"
   },
   "permissions": [

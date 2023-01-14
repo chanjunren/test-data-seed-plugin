@@ -1,8 +1,8 @@
 import React from "react";
 import HeroSection from "./HeroSection";
-import Dashboard from "./Dashboard";
+import Dashboard from "../Dashboard/Dashboard";
 
-export default function HomePage({ pluginState }) {
+export default function HomePage() {
   return (
     <div
       className={
@@ -10,7 +10,7 @@ export default function HomePage({ pluginState }) {
       }
     >
       <HeroSection />
-      <Dashboard pluginState={pluginState} />
+      <Dashboard />
     </div>
   );
 }

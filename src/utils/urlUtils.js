@@ -1,3 +1,3 @@
-export function formatUrl(url) {
+export function appendProdPrefix(url) {
   return `https://www.okx.com/${url}*`;
 }

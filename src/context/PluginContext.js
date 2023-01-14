@@ -2,7 +2,8 @@ import React from "react";
 
 const PluginContext = React.createContext({
   pluginState: {},
-  updateApiListeners: () => {},
+  addApiListener: () => {},
+  removeApiListener: () => {}
 });
 
 export default PluginContext;

@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import TestDataTable from "./TestDataTable";
 import { TrashIcon } from "@heroicons/react/24/outline";
-import SaveIcon from "./SaveIcon";
+import SaveIcon from "../Home/SaveIcon";
+import PluginContext from "../../context/PluginContext";
 
-export default function Dashboard({ pluginState }) {
+export default function Dashboard() {
+    const {pluginState} = useContext(PluginContext)
+    console.log(pluginState)
+
   return (
     <div
       className={
@@ -15,7 +19,7 @@ export default function Dashboard({ pluginState }) {
           "bg-pink-400 text-white p-2 rounded-xl justify-self-start w-fit"
         }
       >
-        {pluginState.targetUrl}
+        {/*{pluginState.url}*/}
       </p>
       <div className={"flex self-end gap-2"}>
         <SaveIcon

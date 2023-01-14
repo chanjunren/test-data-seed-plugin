@@ -42,6 +42,9 @@ Creating CSV files while testing
 
 ## References
 - https://developer.chrome.com/docs/extensions/mv3/getstarted/
+- Relevant Chrome APIs
+  - https://developer.chrome.com/docs/extensions/reference/browsingData/
+  - https://developer.chrome.com/docs/extensions/reference/webRequest/
 - https://parceljs.org/recipes/web-extension/
 - https://prettier.io/docs/en/index.html
 - https://eslint.org/docs/latest/user-guide/getting-started
