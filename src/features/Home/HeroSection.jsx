@@ -8,7 +8,10 @@ import Lottie from "lottie-react";
 import SettingsModal from "./SettingsModal";
 
 export default function HeroSection() {
-  const [isSettingsModalActive, toggleSettingsModal] = useState(false);
+  const [isSettingsModalActive, setSettingsModal] = useState(false);
+  function toggleSettingsModal() {
+    setSettingsModal(!isSettingsModalActive);
+  }
   return (
     <div
       className={

@@ -8,6 +8,8 @@ const PLUGIN_ACTIONS = {
   ADD_URL: 1,
 };
 export default function usePlugin(initialState) {
+  console.log("Use plugin");
+
   const pluginReducer = (prevState, action) => {
     switch (action.type) {
       case PLUGIN_ACTIONS.ADD_URL: {
@@ -22,8 +24,12 @@ export default function usePlugin(initialState) {
         };
       }
       case PLUGIN_ACTIONS.DELETE_URL:
-        prevState.urls.splice(action.payload, 1);
-        return prevState;
+        const newUrls = [...prevState.urls];
+        newUrls.splice(action.payload, 1);
+        return {
+          ...prevState,
+          urls: newUrls,
+        };
     }
   };
 
@@ -36,6 +42,7 @@ export default function usePlugin(initialState) {
   }
 
   function removeApiListener(idx) {
+    console.log("Removing ", idx);
     dispatch({
       type: PLUGIN_ACTIONS.DELETE_URL,
       payload: idx,
